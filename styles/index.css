@@ -14,14 +14,31 @@ body {
 .greet {
     transform: translatey(20%);
     font-size: 50px;
-        margin: 0 0.5rem;
+    margin: 0 0.5rem;
 
-        animation: bounce;
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 
-        animation-duration: 2s;
- 
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+
+}
+@keyframes change-color {
+    25% {
+        color: #00A4BD;
     }
 
+    50% {
+        color: #c8ff7a;
+    }
+
+    75% {
+        color: #ff45a8;
+    }
+}
 .tryck {
     width: 202px;
     height: 48px;
